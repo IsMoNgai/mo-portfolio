@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coil Gun</title>
+    <link rel="stylesheet" href="projects/css/template.css">
+    <link rel="stylesheet" href="projects/css/section5.css">
+    <link rel="stylesheet" href="projects/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html" class="name-tag" onclick="JumpView()"><i class="ri-user-fill"></i><span>Main Page</span></a>
+    
+        <ul class="navbar">
+            <li><a class="active" onclick="JumpView('context')">Process</a></li>
+            <li><a onclick="JumpView('process')">Skills</a></li>
+            <li><a onclick="JumpView('more-photos')">Photos</a></li>
+        </ul>
+        
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="project-title">
+        <h1>Coil Gun</h1>
+    </div>
+    <main>
+        <section class="section">
+            <img src="projects/coil-images/coil.jpg" alt="Project Photo">
+        </section>
+        <section class="section" id="context">
+            <h2 class="section-title">Context</h2>
+            <p>Assisting a fellow grade 12 student, I contributed to a physics project focused on determining the velocity of a slug. I helped to design and organize the experiment, carefully configuring the necessary tools. To achieve this, I engineered two distinct chronograph systems: the first employing a laser, and the second utilizing an IR sensor. Once data collection concluded, my friend proceeded to independently compose the project report.</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title" id="process">Process</h2>
+            <p>
+                For a more comprehensive understanding of the process, you can refer to the detailed description in the student's report below. On this project page, I'll be focusing on sharing the tasks I undertook and the skills I acquired throughout the project.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/coil-images/coil-shoot.mp4" type="video/mp4"></video>
+                    <!-- <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/coil-images/IMG_2362.mp4" type="video/mp4"></video> -->
+                    <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/coil-images/IMG_2363.mp4" type="video/mp4"></video>
+                    <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/coil-images/IMG_2364.mp4" type="video/mp4"></video>
+                    <img src="projects/coil-images/Screenshot 2023-08-29 010730.png" class="swiper-slide" alt="Process Step 1">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Add more process icons as needed -->
+        </section>
+        <section class="section">
+            <h2 class="section-title">Skills I gained</h2>
+            <p>Through this project, I refined critical thinking in designing physics experiment tools, creatively integrating a light-sensitive resistor with a laser for a precise chronograph, and successfully implementing IR sensors. I also gained valuable experience in managing capacitors, while also acquiring new skills in soldering and the operation of DC power generators.</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title">The Report</h2>
+            <p>I wasn't the author of this report; rather, my role involved assisting the student in designing and creating the experimental tools required to complete their project. If you're curious, you can take a look at the report the student wrote by following this link.</p>
+            <a href="projects/coil-images/Determination_of_Capacitances_Effect_on_a_Coil_Guns_Muzzle_Velocity.pdf" download>Click me to download the report!</a>
+        </section>
+        <section class="section more-photos-section">
+            <h2 class="section-title">Sad Fact</h2>
+            <p>Unfortunately, I don't have a video of the second experiment setup, but I do have this photo that I used while creating this page. In this setup, I used a unique method to measure something. I directed a laser at a light-sensitive resistor. When a slug was released and blocked the laser, the resistor detected a change in light, and its resistance increased. By measuring the time it took for this resistance to change, I could calculate the speed of the slug.</p>
+            <div class="more-photos" id="more-photos">
+                <img src="projects/coil-images/coil.jpg" class="swiper-slide" alt="Process Step 1">
+                <!-- Add more "more-photo" divs with icons as needed -->
+            </div>
+        </section>
+    </main>
+    <section id="s5">
+        <div class="contact">
+            <div class="email">
+                <img class="logo" src="projects/icons/email.png">
+                <p>mongaiwaiyin@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <p><a href="https://www.youtube.com/@mongai720/featured"><img class="logo" src="projects/icons/youtube.png"></a></p>
+                <p><a href="https://www.instagram.com/mo_ngai/"><img class="logo" src="projects/icons/instagram.png"></a></p>
+                <p><a href="https://www.linkedin.com/in/mo-ngai-1ba059266/"><img class="logo" src="projects/icons/linkedin.png"></a></p>
+            </div>
+            <div class="phone">
+                <img class="logo" src="projects/icons/telephone.png">
+                <p>+1 (604) 722-1278</p>
+            </div>  
+            <div class="My-name"><p>Mo Ngai Wai Yin</p></div>
+        </div>
+    </section>
+</body>
+<script src="projects/js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="projects/js/template.js"></script>
+</html>

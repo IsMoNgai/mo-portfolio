@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="projects/css/template.css">
+    <link rel="stylesheet" href="projects/css/section5.css">
+    <link rel="stylesheet" href="projects/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html" class="name-tag" onclick="JumpView()"><i class="ri-user-fill"></i><span>Main Page</span></a>
+    
+        <ul class="navbar">
+            <li><a class="active" onclick="JumpView('context')">Process</a></li>
+            <li><a onclick="JumpView('process')">Skills</a></li>
+            <li><a onclick="JumpView('more-photos')">Photos</a></li>
+        </ul>
+
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="project-title">
+        <h1>Forum</h1>
+    </div>
+    <main>
+        <section class="section">
+            <img src="projects/forum/forum.png" alt="Project Photo">
+        </section>
+        <section class="section" id="context">
+            <h2 class="section-title">Context</h2>
+            <p>After completing my first year of university, I discovered a valuable website called Chegg. However, I noticed that it requires a monthly subscription which can be quite expensive. This inspired me to consider creating a similar website, but with a volunteer-based approach. My idea is to develop a platform where people can ask questions for free and receive volunteer answers. To bring this idea to life, I dedicated my summer after my first year to learning how to build a forum.</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title" id="process">Process</h2>
+            <p>I began by learning the basics of frontend software engineering, focusing on essential languages like HTML and CSS. Afterward, I expanded my skills to include Python and became acquainted with the Django library, which I intended to use for the backend of my project. With the guidance of a comprehensive YouTube tutorial, I managed to create a basic forum. While I haven't yet developed a custom frontend design, I used a free online template to establish the initial structure. At this point, my primary focus was on refining the backend and implementing core functionalities.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <video width="100%" class="swiper-slide" height="100%" controls muted><source src="projects/forum/f1-e.mp4" type="video/mp4"></video>
+                    <video width="100%" class="swiper-slide" height="100%" controls muted><source src="projects/forum/f2-e.mp4" type="video/mp4"></video>
+                    <video width="100%" class="swiper-slide" height="100%" controls muted><source src="projects/forum/f3-e.mp4" type="video/mp4"></video>
+                    <video width="100%" class="swiper-slide" height="100%" controls muted><source src="projects/forum/f4.mp4" type="video/mp4"></video>
+                    <video width="100%" class="swiper-slide" height="100%" controls muted><source src="projects/forum/f5-e.mp4" type="video/mp4"></video>
+                </div>
+                <div style="height: 40px;"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Add more process icons as needed -->
+        </section>
+        <section class="section">
+            <h2 class="section-title">Skills I gained</h2>
+            <p><strong>Creating a volunteer-based Q&A forum</strong> has enriched me with a <strong>diverse skill set</strong>. I've gained proficiency in <strong>frontend essentials like HTML and CSS</strong>, while also developing backend skills using <strong>Django</strong> for efficient user interaction and core functionality implementation. My experience includes <strong>designing and managing databases</strong>, honing <strong>problem-solving abilities</strong>, and applying <strong>logical thinking</strong> through debugging and algorithmic solutions. I've also cultivated <strong>project management skills</strong> through effective planning and organization.</p>
+        </section>
+        <section class="section more-photos-section">
+            <h2 class="section-title">Upcoming Features</h2>
+            <p>In terms of upcoming features, I'm excited to introduce a range of enhancements to the forum. One key addition will be the implementation of a <strong>'like' and 'dislike' system</strong>, enabling users to express their appreciation for valuable answers and provide feedback on less helpful responses. Moreover, I'm working on creating a dedicated <strong>profile information section</strong>, allowing users to share more about themselves and foster a sense of community within the forum. Additionally, a dynamic <strong>leaderboard</strong> showcasing the most active and engaged volunteers who consistently provide answers will be integrated, encouraging healthy competition and recognition among contributors. These features collectively aim to enrich the user experience, enhance community interaction, and ultimately elevate the forum's utility and appeal.</p>
+        </section>
+    </main>
+    <section id="s5">
+        <div class="contact">
+            <div class="email">
+                <img class="logo" src="projects/icons/email.png">
+                <p>mongaiwaiyin@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <p><a href="https://www.youtube.com/@mongai720/featured"><img class="logo" src="projects/icons/youtube.png"></a></p>
+                <p><a href="https://www.instagram.com/mo_ngai/"><img class="logo" src="projects/icons/instagram.png"></a></p>
+                <p><a href="https://www.linkedin.com/in/mo-ngai-1ba059266/"><img class="logo" src="projects/icons/linkedin.png"></a></p>
+            </div>
+            <div class="phone">
+                <img class="logo" src="projects/icons/telephone.png">
+                <p>+1 (604) 722-1278</p>
+            </div>  
+            <div class="My-name"><p>Mo Ngai Wai Yin</p></div>
+        </div>
+    </section>
+</body>
+<script src="projects/js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="projects/js/template.js"></script>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="projects/css/template.css">
+    <link rel="stylesheet" href="projects/css/section5.css">
+    <link rel="stylesheet" href="projects/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html" class="name-tag" onclick="JumpView()"><i class="ri-user-fill"></i><span>Main Page</span></a>
+    
+        <ul class="navbar">
+            <li><a class="active" onclick="JumpView('context')">Process</a></li>
+            <li><a onclick="JumpView('learn')">Skills</a></li>
+            <li><a onclick="JumpView('more-photos')">Photos</a></li>
+        </ul>
+
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="project-title">
+        <h1>Simon Game</h1>
+    </div>
+    <main>
+        <section class="section">
+            <img src="projects/simon-says/simon-says.png" alt="Project Photo">
+        </section>
+        <section class="section" id="context">
+            <h2 class="section-title">Context</h2>
+            <p>As a component of the APS160 course project, I employed TinkerCad simulation to design a Simon game. This task involved programming the Arduino UNO to handle the game's underlying logic. Through this, my skills in circuit design, microcontroller programming, and critical thinking received a notable boost. If you're interested, you're welcome to explore the simulation firsthand!</p>
+            <a style="color: rgb(153, 127, 247);" href="https://www.tinkercad.com/things/1vpApHBh88m?sharecode=DxMsqfCDQsiQIUTs-cmQfAwSdArT7hIQ_YczehpI6g8">Click me to TRY IT OUT !!!</a>
+        </section>
+        <section class="section">
+            <h2 class="section-title" id="process">Process</h2>
+            <p>Developing Simon games on Arduino presents a challenge due to the requirement of completing the entire code within a single while loop. Furthermore, incorporating advanced rules such as timeouts and disregarding player inputs while the light signals are active adds another layer of complexity to the coding process.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/simon-says/process.mp4" type="video/mp4"></video>
+                    <img src="projects/simon-says/s1.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/simon-says/s2.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/simon-says/s3.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/simon-says/s4.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/simon-says/s5.png" class="swiper-slide" alt="Process Step 1">
+                </div>
+                <div class="swiper-pagination" id="learn"></div>
+            </div>
+            <!-- Add more process icons as needed -->
+        </section>
+        <section class="section">
+            <h2 class="section-title">Skills I gained</h2>
+            <p>Through the APS160 course project, I delved into the world of electronic circuit design using TinkerCad simulation to create a Simon game. This hands-on endeavor involved programming an Arduino UNO to manage the game's logic, refining my <strong>microcontroller programming skills</strong>. As a result, I gained insights into crafting complex <strong>game rules</strong>, enhancing both my <strong>circuit design abilities</strong> and <strong>critical thinking</strong>. Moreover, I learned to optimize code for efficient execution, despite the challenge of containing it within a single loop. The project showcased my <strong>interdisciplinary aptitude</strong>, fusing electronics, programming, and game design. Overall, this experience empowered me with practical skills in simulation, coding efficiency, and logical thinking, applicable across various domains.</p>
+        </section>
+        <section class="section more-photos-section">
+            <h2 class="section-title">Game Play</h2>
+            <div class="more-photos" id="more-photos">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/simon-says/lose.mp4" type="video/mp4"></video>
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/simon-says/win.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Add more "more-photo" divs with icons as needed -->
+            </div>
+        </section>
+    </main>
+    <section id="s5">
+        <div class="contact">
+            <div class="email">
+                <img class="logo" src="projects/icons/email.png">
+                <p>mongaiwaiyin@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <p><a href="https://www.youtube.com/@mongai720/featured"><img class="logo" src="projects/icons/youtube.png"></a></p>
+                <p><a href="https://www.instagram.com/mo_ngai/"><img class="logo" src="projects/icons/instagram.png"></a></p>
+                <p><a href="https://www.linkedin.com/in/mo-ngai-1ba059266/"><img class="logo" src="projects/icons/linkedin.png"></a></p>
+            </div>
+            <div class="phone">
+                <img class="logo" src="projects/icons/telephone.png">
+                <p>+1 (604) 722-1278</p>
+            </div>  
+            <div class="My-name"><p>Mo Ngai Wai Yin</p></div>
+        </div>
+    </section>
+</body>
+<script src="projects/js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="projects/js/template.js"></script>
+</html>

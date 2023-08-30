@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claw</title>
+    <link rel="stylesheet" href="projects/css/template.css">
+    <link rel="stylesheet" href="projects/css/section5.css">
+    <link rel="stylesheet" href="projects/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html" class="name-tag" onclick="JumpView()"><i class="ri-user-fill"></i><span>Main Page</span></a>
+    
+        <ul class="navbar">
+            <li><a class="active" onclick="JumpView('context')">Process</a></li>
+            <li><a onclick="JumpView('process')">Skills</a></li>
+            <li><a onclick="JumpView('more-photos')">Photos</a></li>
+        </ul>
+
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="project-title">
+        <h1>Claw</h1>
+    </div>
+    <main>
+        <section class="section">
+            <img style="height: auto; width: 50%;" src="projects/claws/claw.JPG" alt="Project Photo">
+        </section>
+        <section class="section" id="context">
+            <h2 class="section-title">Context</h2>
+            <p>As part of the APSC 101 course, our team embarked on a project involving the design of a claw for an upcoming competition. Within this collaborative effort, I played a role in crafting the claw mechanism, which provided me with valuable insights into the practical applications of sonar sensors, cutting tools, and servo mechanisms. As we progressed, the creation of a prototype not only honed my abilities in teamwork, 3D design, and project management but also presented opportunities to overcome challenges through creative solutions. These efforts ultimately culminated in the successful completion of the project.</p>
+        </section>
+        <section class="section">
+            <h2 class="section-title" id="process">Process</h2>
+            <p>Our project journey began by thoroughly studying and clarifying the problem at hand. With a clear understanding, we initiated the process by generating a variety of potential solutions through initial sketches. Moving forward, we transitioned these ideas into tangible prototypes within the workshop, resulting in the creation of two final claw builds. To ensure optimal performance, I crafted an Arduino code that not only eliminated the use of delays but also remained compatible across three competition rounds. Throughout the project timeline, we committed to continuous improvement by conducting experiments and embracing an iterative design approach.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img src="projects/claws/dfsfd.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/claws/Screenshot 2023-08-28 101631.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/claws/Screenshot 2023-08-28 101651.png" class="swiper-slide" alt="Process Step 2">
+                    <img src="projects/claws/Screenshot 2023-08-28 101732.png" class="swiper-slide" alt="Process Step 3">
+                    <img src="projects/claws/Screenshot 2023-08-28 103851.png" class="swiper-slide" alt="Process Step 1">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Add more process icons as needed -->
+        </section>
+        <section class="section">
+            <h2 class="section-title">Skills I gained</h2>
+            <p>Through the APSC 101 course project, I gained a wealth of practical knowledge and skills. This collaborative endeavor centered around designing a claw for a competition proved immensely educational. Crafting the claw mechanism provided hands-on insights into applying <strong>sonar sensors, cutting tools, and servo mechanisms</strong>. As we progressed, the creation of prototypes honed my <strong>teamwork, 3D design, and project management abilities</strong>. Overcoming challenges through <strong>creative solutions</strong> showcased my <strong>adaptability and problem-solving skills</strong>. Crafting an <strong>Arduino code</strong> without delays, compatible across competition rounds, highlighted my <strong>programming proficiency</strong>. Moreover, our <strong>iterative design approach</strong> underscored the importance of continuous improvement. Overall, this journey integrated problem analysis, design thinking, mechanical understanding, coding, and teamwork, culminating in a valuable learning experience that bridged theory and practice.</p>
+        </section>
+        <section class="section more-photos-section">
+            <h2 class="section-title">More Videos</h2>
+            <div class="more-photos" id="more-photos">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/claws/20230828102232.mp4" type="video/mp4"></video>
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/claws/IMG_1848.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Add more "more-photo" divs with icons as needed -->
+            </div>
+        </section>
+    </main>
+    <section id="s5">
+        <div class="contact">
+            <div class="email">
+                <img class="logo" src="projects/icons/email.png">
+                <p>mongaiwaiyin@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <p><a href="https://www.youtube.com/@mongai720/featured"><img class="logo" src="projects/icons/youtube.png"></a></p>
+                <p><a href="https://www.instagram.com/mo_ngai/"><img class="logo" src="projects/icons/instagram.png"></a></p>
+                <p><a href="https://www.linkedin.com/in/mo-ngai-1ba059266/"><img class="logo" src="projects/icons/linkedin.png"></a></p>
+            </div>
+            <div class="phone">
+                <img class="logo" src="projects/icons/telephone.png">
+                <p>+1 (604) 722-1278</p>
+            </div>  
+            <div class="My-name"><p>Mo Ngai Wai Yin</p></div>
+        </div>
+    </section>
+</body>
+<script src="projects/js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="projects/js/template.js"></script>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot</title>
+    <link rel="stylesheet" href="projects/css/template.css">
+    <link rel="stylesheet" href="projects/css/section5.css">
+    <link rel="stylesheet" href="projects/css/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="nav">
+        <a href="index.html" class="name-tag" onclick="JumpView()"><i class="ri-user-fill"></i><span>Main Page</span></a>
+    
+        <ul class="navbar">
+            <li><a class="active" onclick="JumpView('context')">Process</a></li>
+            <li><a onclick="JumpView('process')">Skills</a></li>
+            <li><a onclick="JumpView('more-photos')">Photos</a></li>
+        </ul>
+
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="project-title">
+        <h1>Discord Bot</h1>
+    </div>
+    <main>
+        <section class="section">
+            <img src="projects/discord-bot/discord bot.png" alt="Project Photo">
+        </section>
+        <section class="section" id="context">
+            <h2 class="section-title">Context</h2>
+            <p>I helped a Minecraft Hypixel guild by developing a Discord bot to manage their server. Using Python exclusively, I coded the entire bot and utilized libraries like BeautifulSoup, pandas, and discord. Not being familiar with APIs at the time, I cleverly designed a Python crawler to extract data from the 'plancke' website. Knowing about APIs would have significantly reduced my development time for this project. Nonetheless, the experience provided an opportunity to apply my pandas knowledge effectively in data processing. xD </p>
+        </section>
+        <section class="section">
+            <h2 class="section-title" id="process">Process</h2>
+            <p>The bot serves several purposes, like listing members and guilds, sending welcome messages, helping with role registration, offering guild info, and linking Discord names to in-game ones.</p>
+            <p>Fun Fact: While managing the member list, dealing with names containing "_" was tricky. Discord's automatic formatting sometimes made names like "_its_Mo" look italic as <em>its</em>Mo.</p>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <img src="projects/discord-bot/dc1.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/dc2.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/dc3.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/dc4.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/dc5.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/Screenshot 2023-08-28 011449.png" class="swiper-slide" alt="Process Step 1">
+                    <img src="projects/discord-bot/Screenshot 2023-08-28 011533.png" class="swiper-slide" alt="Process Step 1">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Add more process icons as needed -->
+        </section>
+        <section class="section">
+            <h2 class="section-title">Skills I gained</h2>
+            <p>Through the Minecraft Hypixel guild project, I cultivated a robust skill set. My <strong>Python programming proficiency</strong> flourished as I exclusively coded a comprehensive Discord bot, tapping into libraries such as <strong>BeautifulSoup</strong>, <strong>pandas</strong>, and <strong>discord</strong>. My adeptness in <strong>creative problem-solving</strong> was evident when I ingeniously crafted a Python crawler to extract data from the 'plancke' website, bypassing challenges related to underscored names. This endeavor also afforded me practical insights into <strong>Discord bot development</strong>, spanning functionalities like member listing, welcome messages, and role registration. While the absence of <strong>API knowledge</strong> prompted innovative web scraping solutions, the underscore predicament underscored my attention to detail. Overall, this multifaceted journey underscored my <strong>resourcefulness</strong>, <strong>interdisciplinary adaptability</strong>, and a thirst for <strong>mastering new concepts</strong>.</p>
+        </section>
+        <section class="section more-photos-section">
+            <h2 class="section-title">Testing Process</h2>
+            <div class="more-photos" id="more-photos">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/discord-bot/dc1.mp4" type="video/mp4"></video>
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/discord-bot/dc2.mp4" type="video/mp4"></video>
+                        <video width="100%" class="swiper-slide" height="100%" autoplay loop muted><source src="projects/discord-bot/dc3.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- Add more "more-photo" divs with icons as needed -->
+            </div>
+        </section>
+    </main>
+    <section id="s5">
+        <div class="contact">
+            <div class="email">
+                <img class="logo" src="projects/icons/email.png">
+                <p>mongaiwaiyin@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <p><a href="https://www.youtube.com/@mongai720/featured"><img class="logo" src="projects/icons/youtube.png"></a></p>
+                <p><a href="https://www.instagram.com/mo_ngai/"><img class="logo" src="projects/icons/instagram.png"></a></p>
+                <p><a href="https://www.linkedin.com/in/mo-ngai-1ba059266/"><img class="logo" src="projects/icons/linkedin.png"></a></p>
+            </div>
+            <div class="phone">
+                <img class="logo" src="projects/icons/telephone.png">
+                <p>+1 (604) 722-1278</p>
+            </div>  
+            <div class="My-name"><p>Mo Ngai Wai Yin</p></div>
+        </div>
+    </section>
+</body>
+<script src="projects/js/navbar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="projects/js/template.js"></script>
+</html>
