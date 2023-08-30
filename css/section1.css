@@ -1,0 +1,172 @@
+
+#intro {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    z-index: 300;
+    background: var(--shadowColor);
+    transition: 1s;
+}
+
+#ball {
+    background: linear-gradient(60deg, #10acbb, #689cdd, #3b60c4);
+    height: 50px;
+    width: 50px;
+    position: relative;
+    border-radius: 50%;
+    top: 10%;
+    left: 10%;
+    animation: bounce 3s ease-in forwards;
+}
+
+@keyframes bounce{
+    10%{
+        height: 50px;
+        width: 50px;
+    }
+    20%{
+        height: 50px;
+        width: 40px;
+    }
+    30%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(400px);
+    }
+    40%{
+        height: 50px;
+        width: 57px;
+        transform: translateY(100px);
+    }
+    50%{
+        height: 50px;
+        width: 57px;
+        transform: translateY(400px);
+    }
+    60%{
+        height: 30px;
+        width: 57px;
+        transform: translateY(200px);
+    }
+    70%{
+        height: 50px;
+        width: 50px;
+        transform: translateY(400px);
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        transform: translateY(280px);
+    }
+}
+
+#s1{
+    background-color: var(--backgroundColor);
+    /* border-bottom: 1px solid var(--borderColor); */
+    overflow: auto;
+    position: relative;
+    min-height: 100vh;
+    transition: 2s;
+}
+
+.welcome {
+    display: inline-block; 
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+
+.welcome h1 {
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(15), cursor .4s step-end infinite alternate;
+}
+
+.welcome p {
+    letter-spacing: 10px;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(32), cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor{
+    50% { border-color: transparent }
+}
+
+@keyframes typing{
+    from { width: 0 }
+}
+
+.face {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(60deg, #10acbb, #689cdd, #3b60c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyes {
+    position: relative;
+    top: 0;
+    display: flex;
+}
+
+.eyes .eye{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    display: block;
+    background: #fff;
+    margin: 0 15px;
+    border-radius: 50%;
+}
+
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .welcome{
+        top: 10%;
+        left: 10%;
+    }
+    .welcome h1{
+        font-size: 36px;
+    }
+    .welcome p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .welcome{
+        top: 20%;
+        left: 5%;
+    }
+    .welcome h1{
+        font-size: 26px;
+    }
+    .welcome p{
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}

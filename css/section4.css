@@ -1,0 +1,100 @@
+#s4 {
+    background-color: var(--shadowColor);
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    position: relative;
+    min-height: 100vh;
+    transition: 2s;
+    border-bottom: 1px solid var(--borderColor);
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.programming {
+    position: relative;
+    background-color: var(--backgroundColor);
+    height: 450px;
+    margin: 10px 10% 10px 10%;
+    border-radius: 30px;
+}
+
+.programming h2{
+    position: absolute;
+    left: 5%;
+    margin-bottom: 0px;
+    color: var(--titleColor);
+}
+
+.language{
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    display: grid;
+    top: 20%;
+    overflow: visible;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.language img{
+    max-height: 80%;
+    overflow: visible;
+    max-width: 80%;
+}
+
+.explore {
+    position: relative;
+    background-color: var(--backgroundColor);
+    height: 400px;
+    margin: 10px 10% 50px 10%;
+    border-radius: 30px;
+}
+
+.explore h2{
+    position: absolute;
+    left: 5%;
+    margin-bottom: 0px;
+    color: var(--titleColor2);
+}
+
+.explore .language{
+    top: 25%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.language-icon{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore .language img{
+    max-height: 50%;
+    overflow: visible;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .programming h2{
+        top: 5%;
+        font-size: 30px;
+    }
+    .explore h2{
+        top: 5%;
+        font-size: 30px;
+    }
+    .language{
+        top: 25%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .language img{
+        padding: 10%;
+        max-height: 60%;
+        max-width: 60%;
+    }
+}

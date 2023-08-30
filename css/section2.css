@@ -1,0 +1,233 @@
+
+#s2{
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+    height: auto;
+    padding-bottom: 100px;
+}
+
+@keyframes atomic {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.photo-panel {
+    position: relative;
+    background-color: var(--backgroundColor);
+    width: 420px;
+    height: 500px;
+}
+
+.atomic {
+    position: relative;
+    top: 5%;
+    left: 5%;
+    width: 370px;
+    height: 450px;
+    background: var(--backgroundColor);
+    border-radius: 18% 82% 26% 74% / 18% 83% 17% 82%;
+    overflow: hidden;
+}
+
+.atomic::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg, transparent, #10acbb, #3b60c4);
+    transform-origin: bottom right;
+    animation: atomic 2s linear infinite;
+}
+
+.atomic-cover {
+    position: relative;
+    z-index: 90;
+    width: 368px;
+    height: 448px;
+    background-color: var(--backgroundColor);
+    border-radius: 18% 82% 26% 74% / 18% 83% 17% 82%;
+}
+
+.atomic-2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 95;
+    width: 370px;
+    height: 450px;
+    background: var(--backgroundColor);
+    border-radius: 81% 19% 87% 13% / 84% 14% 86% 16%;
+    overflow: hidden;
+}
+
+.atomic-2::before {
+    content: "";
+    position: absolute;
+    z-index: 95;
+    top: -50%;
+    left: -50%;
+    width: 370px;
+    height: 450px;
+    background: linear-gradient(60deg, transparent, #10acbb, #3b60c4);
+    transform-origin: bottom right;
+    animation: atomic 2s linear infinite;
+    animation-delay: -3s;
+}
+
+.atomic-cover-2 {
+    position: relative;
+    z-index: 100;
+    width: 368px;
+    height: 448px;
+    background-color: var(--backgroundColor);
+    border-radius: 81% 19% 87% 13% / 84% 14% 86% 16%;
+}
+
+.Photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--backgroundColor);
+}
+
+.selfie{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    z-index: 105;
+    width: 350px;
+    height: 350px;
+    border-radius: 69% 31% 62% 38% / 33% 69% 31% 67% ;
+    border-color: var(--borderColor);
+    border-style: solid;
+    border-width: thick;
+}
+
+.selfie-img {
+    object-fit: fill;
+    position: absolute;
+    z-index: 105;
+    width: 350px;
+    height: 350px;
+    filter: brightness(1.2);
+    border-radius: 69% 31% 62% 38% / 33% 69% 31% 67% ;
+    border-color: var(--borderColor);
+    border-style: solid;
+    border-width: thick;
+}
+
+.About {
+    position: relative;
+    background-color: var(--backgroundColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -5%;
+}
+
+.About-panel {
+    position: relative;
+    border-radius: 38% 24% 23% 17% / 39% 27% 28% 19% ;
+    background: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    z-index: 10;
+}
+
+.About-panel-shadow {
+    position: absolute;
+    border-radius: 38% 24% 23% 17% / 39% 27% 28% 19% ;
+    background: var(--shadowColor);
+    opacity: 0.9;
+    top: 15%;
+    left: 10%;
+    z-index: 5;
+    display: flex;
+    width: 500px;
+    height: 500px;
+}
+
+.About-text {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    background-color: transparent;
+}
+
+.About-text h2{
+    text-align: center;
+}
+
+.About-text span{
+    font-size: 20px;
+    text-align: center;
+}
+
+#sec1-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .About-panel{
+        width: 90%;
+    }
+    .About-panel-shadow{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .About-panel{
+        width: 90%;
+        height: 80%;
+    }
+    .About-panel-shadow{
+        width: 90%;
+        height: 85%;
+    }
+    .About-text {
+        top: 10%;
+    }
+    .About-text span{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #sec1-wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .About-panel{
+        left: 5%;
+        width: 80%;
+        height: 70%;
+    }
+    .About-panel-shadow{
+        width: 80%;
+        height: 80%;
+    }
+    .About-text {
+        top: 10%;
+    }
+    .About-text span{
+        font-size: 18px;
+        text-align: center;
+    }
+}
