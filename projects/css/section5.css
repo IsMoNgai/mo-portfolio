@@ -1,0 +1,125 @@
+:root{
+    --mainColor:#ceeffd;
+
+    --borderColor:#16161e;
+
+    --backgroundColor: #1a1b26;
+
+    --shadowColor: #16161e;
+
+    --mainText: rgb(242, 249, 255);
+    --secondarytext: #ceeffd;
+
+    --titleColor: #9463ea;
+    --titleColor2: #a68ee4;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--backgroundColor);
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondarytext);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+ul{
+    list-style: none;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+#s5{
+    height: 242px;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 17.5px;
+    height: 20px;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 90%;
+}
+
+.email{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.email img{
+    padding-right: 5px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.phone img{
+    padding-right: 5px;
+}
+
+.My-name{
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+    .contact{
+        grid-template-columns: 1fr 1fr;
+    }
+    .My-name{
+        align-items: center;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .phone{
+        grid-row: 2;
+        grid-column: 2;
+    }
+}

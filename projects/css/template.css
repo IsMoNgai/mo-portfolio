@@ -1,0 +1,139 @@
+:root{
+    --mainColor:#ceeffd;
+
+    --borderColor:#16161e;
+
+    --backgroundColor: #1a1b26;
+
+    --shadowColor: #16161e;
+
+    --mainText: rgb(242, 249, 255);
+    --secondarytext: #ceeffd;
+
+    --titleColor: #9463ea;
+    --titleColor2: #a68ee4;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--backgroundColor);
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondarytext);
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+ul{
+    list-style: none;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+h4 { font-size: 24px; }
+h5 { font-size: 20px; }
+h6 { font-size: 16px; }
+
+body{
+    background: var(--backgroundColor);
+}
+
+.project-title{
+    background-color: var(--shadowColor);
+    color: red;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    background-color: var(--shadowColor);
+}
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    min-height: 330px;
+    padding-bottom: 20px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    object-fit: cover;
+}
+
+.swiper-pagination .swiper-pagination-bullet{
+    background-color: #10acbb;
+    opacity: 0.5;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active{
+    background: linear-gradient(60deg, rgb(42, 150, 245), #10acbb, #3b60c4);
+    opacity: 1;
+}
+
+.more-photos-section {
+    background-color: var(--backgroundColor);
+}
+
+.more-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.more-photo {
+    flex-basis: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.more-photo img {
+    max-width: 100%;
+    height: auto;
+}
